@@ -1,0 +1,7 @@
+body {
+    margin: 0;
+    background-image: url("../images/dark-fabric.png");
+    @include backgroundImage; 
+    background-size: cover;   
+    background-color:rgba(0, 0, 0, 0.98);   
+}                

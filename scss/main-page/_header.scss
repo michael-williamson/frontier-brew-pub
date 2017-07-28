@@ -1,0 +1,103 @@
+header {
+    border-top: 1px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 59px;
+    background: rgba(0, 0, 0, 0.89);
+    border-radius: 6px;
+    z-index: 100000;
+    @media(min-width: 768px){
+        height: $header-height + 14px;   
+    }
+    @media(min-width:1024px){
+        left: 0; 
+    }
+    h3{
+    font-family: 'Freckle Face', cursive;
+    color: orange;
+    padding-left: 28px;    
+    margin-top: 15px;
+    font-size: 24px;
+    @media(min-width: 768px){
+        margin-top: 18px;
+        font-size: 1.87em;  
+        margin-left: 18px;
+        display: inline-block; 
+    }
+    }
+    nav{
+        background-color: rgba(0, 0, 0, 0.58);
+        width: 66%;
+        height: 59vh;
+        position: absolute;
+        top: $header-height;         
+        right: 0;
+        z-index: 10000;  
+        border: 3px solid rgba(255, 165, 0, 0.18);
+        display: none; 
+        @media(min-width:1024px){
+            display: inline-block;
+            width: 39%;   
+            height: $header-height;  
+            top: 0; 
+        }
+        @media(min-width:1024px){
+            border: none;   
+            right: 19px; 
+        }
+        ul{
+            @include ul;   
+            @media(min-width:768px){
+                margin: 0; 
+            }
+            @media(min-width:1024px){
+                margin: 8px 0 0 0;
+            }
+            li{
+                text-align: center; 
+                line-height: 50px;
+                background: rgba(65, 65, 63, 0.88);
+                margin: 20px;
+                @media(min-width:1024px){
+                    display: inline-block;
+                    width: auto;
+                    line-height: 1em; 
+                }
+                @media(min-width:1024px){
+                    background-color: transparent; 
+                }
+                a{
+                    color: white; 
+                    text-decoration: none; 
+                    font-size: 2em; 
+                    font-family: 'Stardos Stencil', cursive;
+                    @media(min-width:1024px){
+                        font-size: 1em;    
+                    } 
+                    }
+                    a:hover {   
+                        color: orange;                        
+                }
+            }
+        }
+    }
+  
+    .menu-icon {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    margin: 0 auto;
+    width: 47px;
+    height: 41px;
+    background-color: #ff9b00;
+    border-radius: 11px;
+    @media(min-width:768px){
+        top: 14px;   
+        right: 26px;        
+    }
+    @media(min-width: 1024px){
+        display: none; 
+    }
+    }
+}  

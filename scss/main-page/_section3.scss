@@ -1,0 +1,47 @@
+.section3{
+    content: '';
+    height: 511px;  
+    background-image: url(../images/brewer.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 196% 100%;  
+    background-position-x: -88px;
+    padding-top: 40px;
+    @media(min-width: 768px){
+        height: 558px;     
+    }
+    @media(min-width: 768px){
+        background-size: 116% 114%;       
+    }   
+    iframe{
+        width: 292px;
+        height: 192px;
+        border: solid 9px white;
+        margin: 0 auto;   
+        display: block;
+        @media(min-width:768px){
+            width: 424px;
+            height: 289px;
+        }
+    }
+    h1{
+        color: white; 
+        font-family: sans-serif; 
+        background-color: black; 
+        text-align: center; 
+        @media(min-width:768px){
+            padding: 22px 0;
+            font-size: 32px;
+        }
+    }
+    p{
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        background-color: #997c39;
+        padding: 20px 4px;
+        @media(min-width:768px){
+            padding: 13px 4px; 
+        }
+    }
+}      

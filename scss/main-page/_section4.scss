@@ -1,0 +1,74 @@
+.section4{
+    height: 334px; 
+    background-color:  rgb(23, 23, 23);
+    border-top: 1px solid black; 
+    overflow: hidden; 
+    position: relative; 
+    @media(min-width: 768px){
+        height: 467px; 
+    }
+    h1{
+        text-align: center;
+        background-color: rgba(255, 143, 0, 0.56);
+        color: white;
+        font-family: 'Freckle Face', cursive;
+        width: 108px;
+        font-size: 32px;
+        padding: 6px;
+        margin: 22px auto 0;
+        border-radius: 7px;
+    }
+    #back{
+        position: absolute;
+        top: 40px;
+        left: 15px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.38);
+        border: none;
+        font-size: 21px;       
+    }
+    #next{
+        position: absolute;
+        top: 40px;
+        right: 15px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.38);
+        border: none;
+        font-size: 21px;      
+    }
+    ul{
+        @include ul; 
+        list-style: none;
+        width: 2000px;
+        height: 200px;  
+        position: relative;
+        right: calc(339px - 50%);
+        @media(min-width:768px){
+            width: 3000px;
+            height: 350px;   
+            right: calc(554px - 50%);
+            margin: 39px 0 ;      
+        }  
+        @media(min-width:1024px){
+            right: calc(1317px - 50%);
+        }   
+        li{ 
+            display: inline-block;
+            width: $slider-image-width;  
+            margin: 0 13px;
+            @media(min-width:768px){
+                width: 350px;   
+            }
+
+            img{
+                width: 200px;
+                height: 200px; 
+                @media(min-width:768px){
+                    width: 350px;
+                    height: 313px;
+                }
+            }
+        }
+
+    }
+}      

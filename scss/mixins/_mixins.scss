@@ -1,0 +1,8 @@
+@mixin backgroundImage {
+    background-repeat: no-repeat; 
+}
+
+@mixin ul {
+    padding-left: 0;
+    list-style: none; 
+}
