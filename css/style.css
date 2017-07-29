@@ -52,7 +52,8 @@ header {
     @media (min-width: 1024px) {
       header nav {
         border: none;
-        right: 19px; } }
+        right: 19px;
+        background-color: transparent; } }
     header nav ul {
       padding-left: 0;
       list-style: none; }
@@ -392,7 +393,7 @@ footer {
   background-color: black;
   background-image: url("../images/dark-fabric.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   position: relative;
   border-top: solid 1px black;
   padding-top: 35px; }

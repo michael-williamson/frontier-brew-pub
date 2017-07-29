@@ -2,11 +2,11 @@ footer {
     background-color: black; 
     background-image: url('../images/dark-fabric.png');   
     @include backgroundImage;
-    background-size: cover;  
-    position: relative;
+    background-size: 100% 100%; 
+    position: relative;  
      border-top: solid 1px black;
     padding-top: 35px;
-    iframe{
+    iframe{  
         width: 200px;
         height: 200px; 
         margin: 0 auto; 

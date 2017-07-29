@@ -45,6 +45,7 @@ header {
         @media(min-width:1024px){
             border: none;   
             right: 19px; 
+            background-color: transparent; 
         }
         ul{
             @include ul;   
